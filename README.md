@@ -6,7 +6,7 @@ In this Code Pattern, we will create a travel web application using Node.js, Rea
 
 # Architecture
 
-![](readme_images/architecture.png)
+![](readme-images/architecture.png)
 
 1. User interacts with the app UI to search/view destination data. In interacting with the UI, the autoscaling of Knative serving is triggered for the UI.
 2. The app UI makes calls to the destination service APIs to get destination data. With the API calls, the autoscaling of Knative serving is triggered for the destination microservice.
