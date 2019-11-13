@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: bee-kn
+spec:
+  template:
+    spec:
+      containers:
+        - image: moficodes/bee-ui:v0.0.8
+          env:
+            - name: DESTINATION_URL
+              value: http://destination-kn.default.svc.cluster.local
